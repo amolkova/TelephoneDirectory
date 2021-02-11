@@ -24,5 +24,15 @@ public class Start {
 			System.out.println(key + " : " + unicWordsMap.get(key));
 		}
 		
+		
+		System.out.println("Задача 2");
+		PhoneDirectory phoneDirectory = new PhoneDirectory();
+		phoneDirectory.add("Иванов", "565656");
+		phoneDirectory.add("Сидоров", "232323");
+		phoneDirectory.add("Иванов", "121212");
+		phoneDirectory.add("Иванов", "565656");
+		
+		System.out.println("Иванов " + phoneDirectory.get("Иванов"));
+		
 	}
 }
